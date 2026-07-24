@@ -1,10 +1,16 @@
-PRK COMMUNITY MAP - based on Atlas of Rubi-Ka v2.1.0 (Onack, 2010)
-Maintained by Dylan + Claude. PRK-specific markers use bright cyan
-diamonds with "PRK:" prefix (colors from PRK's GMI interface).
-Style: permanent PRK additions = cyan #5fd7e2; temporary/placeholder = gold #f2cc79.
+PRK MAP - the community map for Project Rubi-Ka (Anarchy Online 18.4)
+Based on Atlas of Rubi-Ka v2.1.0 by Onack (2010), rebranded for PRK.
+Maintained by Everkill (.everkill on Discord) - ping him with map
+updates/requests. Include an in-game F9 "Pos:" line for new locations.
+
+PRK-specific markers use a "PRK:" prefix. Style guide:
+- Cyan diamond #5fd7e2 = permanent PRK additions (GMI color scheme)
+- Gold #f2cc79 = temporary/placeholder content that will change later
 Coordinate formula: Demoder PMV world bounds X[31022..49770] Z[24880..48996].
 
 v1.1 - 2026-07-24
+- Rebranded from AoRK to PRK Map: shows as "PRK Map v1.1" in the
+  in-game map selection, folder renamed AoRK -> PRKMap.
 - Added PRK: LAND CONTROLLER - PB CRYSTALS marker, Andromeda ICC HQ
   (Pos: 3289.8, 881.2, Area: Nepal). Land Control tower used to fill
   "Crystal filled by the Source" for pocket boss spawns (interim until
@@ -12,9 +18,11 @@ v1.1 - 2026-07-24
 - Added PRK: DATA FRAG SHOPS - 000 WEAPONS marker, Andromeda ICC HQ
   (Pos: 3257.3, 855.0, Area: Nepal). Shops selling 000 weapons and
   upgrades for Data Fragments (drop from Subway/ToTW trash + bosses).
-- Markers added on zoom layers 2, 3 and 4 across all three map
-  versions (AoRK, RK1/Atlantean, RK2/Rimor).
+- Markers on zoom layers 2-4 across all three map versions.
 
 v1.0 - 2026-07-16
-- Original AoRK v2.1.0 recovered from Internet Archive, verified
+- Original AoRK v2.1.0 recovered from the Internet Archive, verified
   era-correct for PRK 18.4 (all dyna camps + levels).
+
+Credits: Onack (Atlas of Rubi-Ka), Finnagen (CSPmap), Demoder (map
+compiler + viewer tooling), Saavick (preserving the classic AO maps).
