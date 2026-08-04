@@ -8,14 +8,16 @@ PRK-specific markers use a "PRK:" prefix. Style guide:
 - Gold #f2cc79 = temporary/placeholder content that will change later
 Coordinate formula: Demoder PMV world bounds X[31022..49770] Z[24880..48996].
 
-v1.3 rev 3 - 2026-08-04
-- FIXED: 4K map top zoom (HD layer) was drawn 128px north of the position
-  marker (tile-chain off-by-one introduced in rev 2). HD layer restored to
-  the proven v1.2 tile layout.
+v1.3 rev 4 - 2026-08-04
+- FIXED: position marker on the two new 1.5x zoom layers sat 64px north of
+  the player's true spot (the client's marker placement doesn't follow the
+  scaled MapRect). The 1.5x artwork is now registered to the client's
+  actual marker math - verified dead-on at Newland City and ICC HQ.
+- FIXED: 4K map top zoom (HD layer) was drawn a full tile north of the
+  position marker - a tile-chain off-by-one from rev 2. HD layer restored
+  to the proven v1.2 tile layout.
 - All baked version plates on the artwork now read v1.3 (overview title,
   medium plate, full layers, 1.5x layers, HD layer).
-- Layers 5/6 (1.5x zooms) verified pixel-perfect against tester
-  screenshots: tiles, position marker and PRK markers all correct.
 
 v1.3 - 2026-08-04
 - Two map entries for different monitors (pick in map selection):
