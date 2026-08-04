@@ -10,12 +10,21 @@ Based on **Atlas of Rubi-Ka v2.1.0** by Onack (2010) — the last great communit
 
 ![PRK markers at ICC HQ](prk-markers-icc.png)
 
+## Two maps: 2K and 4K (new in v1.3)
+
+The pack now installs **two entries** in your in-game map selection — pick the one that fits your monitor:
+
+- **PRK Map 2K** — tops out at a 1.5x zoom layer, ideal for 1080p/1440p displays where the HD layer felt too big
+- **PRK Map 4K** — same map plus the full 2x HD layer on top for 4K/5K displays, with the 1.5x layer as an in-between zoom step
+
+Both maps include a zoomed version of the **grey reference layer** (quest mobs, grid info) — new in v1.3.
+
 ## Install
 
 1. Download the latest `PRK-Map-vX.X.zip` from [Releases](../../releases)
 2. In game, switch your map to *Default planetmap* first (P → map selection)
 3. Extract the `PRKMap` folder into: `<your PRK client>\cd_image\textures\PlanetMap\`
-4. Log fully out and back in, open the map (P) and select **PRK Map v1.1**
+4. Log fully out and back in, open the map (P) and select **PRK Map 2K** or **PRK Map 4K**
 
 If the map window ever shows a load error, run `/setoption PlanetMapIndexFile normal/PlanetMapIndexNormal.txt` in chat and reopen the map.
 
@@ -24,7 +33,7 @@ If the map window ever shows a load error, run `/setoption PlanetMapIndexFile no
 - 🔷 **Cyan diamond, `PRK:` prefix** — PRK-specific content (permanent). Colors match the GMI interface.
 - 🔶 **Gold, `PRK:` prefix** — temporary/placeholder content that will move or change as the server develops.
 
-Current PRK markers (v1.1): the Land Controller for PB crystals and the Data Fragment shops (000 weapons/upgrades), both at ICC HQ in Andromeda.
+Current PRK markers: the Land Controller for PB crystals and the Data Fragment shops (000 weapons/upgrades), both at ICC HQ in Andromeda.
 
 ## Updates & requests
 

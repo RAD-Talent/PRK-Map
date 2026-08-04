@@ -8,7 +8,33 @@ PRK-specific markers use a "PRK:" prefix. Style guide:
 - Gold #f2cc79 = temporary/placeholder content that will change later
 Coordinate formula: Demoder PMV world bounds X[31022..49770] Z[24880..48996].
 
+v1.3 - 2026-08-04
+- Two map entries for different monitors (pick in map selection):
+  "PRK Map 2K" tops out at a new 1.5x zoom - ideal for 1440p/2K.
+  "PRK Map 4K" adds the same 1.5x step BETWEEN the normal and HD
+  layers, then keeps the 2x HD layer on top for 4K/5K displays.
+- The grey reference layer (quest mobs, grid info) now has a zoomed
+  1.5x version in both maps - it previously had no zoom at all.
+- Same single PRKMap.bin shared by both entries.
+
+v1.2 - 2026-07-25
+- New 5th zoom level: "HD" detail layer at 2x magnification for
+  modern high-resolution displays. Same info as the color detail
+  layer (dynas, shops, PRK markers) with crisp doubled pixels -
+  zoom in one extra step to use it.
+- PRK marker labels and legend entry now use the map's own pixel
+  font (glyphs harvested from the original label graphics) and
+  smaller diamonds, matching native map elements exactly.
+- Full PRK rebrand of the map graphics: replaced the AoRK title text
+  (zoomed-out layer) and the AoRK logo panel (grid/reference layer)
+  with PRK Map branding. Original credits kept in small print.
+- Added "PRK: SERVER-SPECIFIC LOCATION" entry to the in-map legend.
+- Single map file: one "PRK Map v1.2" entry in the map selection.
+
 v1.1 - 2026-07-24
+- Single map entry: removed the RK1/RK2 dimension variants from the
+  package (leftovers from live AO multi-dimension servers; PRK has one
+  dimension, so only "PRK Map v1.1" shows in the map selection).
 - Rebranded from AoRK to PRK Map: shows as "PRK Map v1.1" in the
   in-game map selection, folder renamed AoRK -> PRKMap.
 - Added PRK: LAND CONTROLLER - PB CRYSTALS marker, Andromeda ICC HQ
