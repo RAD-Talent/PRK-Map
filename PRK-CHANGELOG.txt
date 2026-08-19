@@ -1,3 +1,12 @@
+v1.3 rev 5 (2026-08-19)
+- 4K map: reduced from 7 to 6 zoom layers (removed the grey 1.5x step; color 1.5x and HD stay).
+  Fixes crash-to-desktop when closing the map while fully zoomed in, and when reopening the
+  map after zoning with full zoom saved (reported by Sceo). The 18.4 client chokes on the
+  saved zoom state past 6 layers - no other map ever shipped 7.
+- 2K map: unchanged.
+- Only PRKMap.txt changed. Existing installs: just replace PRKMap.txt, no need to re-download the bin.
+- If you are stuck crashing at login from this: open Prefs\<account>\Char<id>\Prefs.xml and set ZoomLev back to 1.
+
 PRK MAP - the community map for Project Rubi-Ka (Anarchy Online 18.4)
 Based on Atlas of Rubi-Ka v2.1.0 by Onack (2010), rebranded for PRK.
 Maintained by Everkill (.everkill on Discord) - ping him with map
@@ -8,16 +17,15 @@ PRK-specific markers use a "PRK:" prefix. Style guide:
 - Gold #f2cc79 = temporary/placeholder content that will change later
 Coordinate formula: Demoder PMV world bounds X[31022..49770] Z[24880..48996].
 
-v1.3 rev 4 - 2026-08-04
+v1.3 rev 4 (2026-08-04)
 - FIXED: position marker on the two new 1.5x zoom layers sat 64px north of
-  the player's true spot (the client's marker placement doesn't follow the
-  scaled MapRect). The 1.5x artwork is now registered to the client's
-  actual marker math - verified dead-on at Newland City and ICC HQ.
-- FIXED: 4K map top zoom (HD layer) was drawn a full tile north of the
-  position marker - a tile-chain off-by-one from rev 2. HD layer restored
-  to the proven v1.2 tile layout.
-- All baked version plates on the artwork now read v1.3 (overview title,
-  medium plate, full layers, 1.5x layers, HD layer).
+  the player's true spot (client's marker math doesn't follow the scaled
+  MapRect). The 1.5x artwork is now registered to match the client's
+  placement - marker verified dead-on at Newland City and ICC HQ.
+- FIXED: 4K map top zoom (HD layer) was shifted a full tile north of the
+  marker - tile-chain off-by-one from rev 2. Restored to the proven v1.2
+  layout.
+- All baked version plates now read v1.3.
 
 v1.3 - 2026-08-04
 - Two map entries for different monitors (pick in map selection):
