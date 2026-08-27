@@ -1,0 +1,5 @@
+PRK Map projection (solved 2026-08-27, 18-point fit, ~2px median error)
+map coord = playfield_origin(from PRKMap_MapCoords.xml) + local(x,z)
+BASE layer 3584x4608:  px = 0.189630*mapx - 5873.12 ;  py = -0.189630*mapz + 9436.58
+5.273 map units per pixel. Other layers: multiply by (layerwidth/3584).
+NOTE: city interiors (Old Athen, Omni Trade) are drawn as separate insets - different transform.
